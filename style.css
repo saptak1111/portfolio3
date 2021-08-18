@@ -1,0 +1,584 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+}
+
+/********* font css **************/
+.lato
+{
+	font-family: 'Lato', sans-serif; /* for normal text */
+}
+.roboto
+{
+	font-family: 'Roboto Condensed', sans-serif; /*for header */
+}
+.font-weight-300
+{
+	font-weight:300;
+}
+.font-weight-400
+{
+	font-weight:400;
+}
+.font-weight-700
+{
+	font-weight:700;
+}
+.font-weight-900
+{
+	font-weight:900;
+}
+h1,h2,h3,h4,h5
+{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight:700;
+	color:#002A91;
+}
+
+/****** generic margin css ************/
+
+a:hover,
+a:focus,
+a:active
+{
+	text-decoration:none;
+}
+.mb-50
+{
+	margin-bottom: 50px;
+}
+.mt-fifteen-percent
+{
+	margin-top:15%;
+}
+.mt-minus-fifty
+{
+	margin-top:-50px;
+}
+.mb-minus-fifty
+{
+	margin-bottom:-50px;
+}
+.mt-hundred
+{
+	margin-top:100px;
+}
+.mb-hundred
+{
+	margin-bottom:100px;
+}
+.pt-hundred
+{
+	padding-top:100px;
+}
+.pb-hundred
+{
+	padding-bottom:100px;
+}
+.pointer
+{
+	cursor: pointer;
+}
+
+.pt25 {
+	padding-top: 25px;
+}
+.pb25 {
+	padding-bottom:25px;
+}
+.ptb25 {
+	padding: 25px 0;
+}
+.plr25 {
+	padding: 0 25px;
+}
+.pt50 {
+	padding-top: 50px;
+}
+.pb50 {
+	padding-bottom: 50px;
+}
+.ptb50 {
+	padding: 50px 0;
+}
+.plr50 {
+	padding: 0 50px;
+}
+
+/********** generic animation css ***********/
+.delay-one
+{
+ animation-delay: .2s;
+}
+.delay-two
+{
+ animation-delay: .4s;
+}
+.delay-three
+{
+ animation-delay: .6s;
+}
+.delay-four
+{
+ animation-delay: .8s;
+}
+.delay-five
+{
+ animation-delay: 1s;
+}
+.delay-six
+{
+ animation-delay: 1.2s;
+}
+
+/************ generic button css *************/
+.btn-custom-yellow
+{
+	position:relative;
+	background-color:#ffd22d;
+    width: 100%;
+	color: #000;
+	border:#ff9000 solid 2px;
+	border-radius: 0;
+    cursor: pointer;
+	text-transform:uppercase;
+	word-spacing:7px;
+	z-index:1;
+	transition:all 500ms;
+	-moz-transition:all 500ms;
+	-ms-transition:all 500ms;
+	-o-transition:all 500ms;
+	-webkit-transition:all 500ms;
+}
+.btn-custom-yellow:hover
+{
+	background-color: #002A91;
+	color: #fff;
+	border:#ff9000 solid 2px
+}
+
+.divider,
+.divider-center
+{
+	position:relative;
+	padding-bottom:20px;
+}
+.divider:after,
+.divider-center:after
+{
+	position:absolute;
+	content:'';
+	width:120px;
+	height:2px;
+	bottom:0;
+	background:#002A91;
+}
+.divider:before,
+.divider-center:before
+{
+	position:absolute;
+	content:'';
+	width:10px;
+	height:10px;
+	border-radius:100%;
+	bottom:-4px;
+	background:#002A91;
+}
+.divider:after
+{
+	left:0;
+	bottom:0;
+}
+.divider:before
+{
+	left:0;
+}
+.divider-center:after
+{
+	left:48%;
+}
+.divider-center:before
+{
+	left:48%;
+}
+/*
+.banner {
+    min-height: 500px;
+}
+*/
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+.background-light {
+    background: #f7f7f7;
+}
+.background-white {
+	background-color: white;
+}
+.color-blue {
+    color: #002A91;
+}
+
+.round-icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.5rem;
+    background: #1c4591;
+    border: 3px solid white;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    /*box-shadow: 0 0 15px #666;*/
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: all 800ms;
+    -moz-transition: all 800ms;
+    -o-transition: all 800ms;
+    -ms-transition: all 800ms;
+    -webkit-transition: all 800ms;
+}
+
+.round-icon-gruop {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-size: 1.2rem;
+}
+
+.round-icon-gruop:hover .round-icon {
+    transform: rotate(360deg);
+}
+
+.round-icon-gruop:hover .round-icon {
+    transform: rotate(360deg);
+}
+
+.no-border {
+	border: none;
+}
+.list-item {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.line-height-250-persent {
+    line-height: 250%;
+}
+.small-divide-white:before,
+.small-divide-violate:before
+{
+	position:absolute;
+	content:'';
+	width:30%;
+	height:3px;
+	bottom:0;
+	left:33%;
+	transition:all 500ms;
+	-moz-transition:all 500ms;
+	-o-transition:all 500ms;
+	-webkit-transition:all 500ms;
+	-ms-transition:all 500ms;
+}
+.small-divide-white:before
+{
+	background:#fff;	
+}
+.small-divide-blue:before
+{
+	background:#002A91;	
+}
+.color-white {
+    color: #fff;
+}
+.failed-payment-group {
+    position: relative;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 0;
+    box-shadow: 0 0 10px #eddfff;
+    overflow: hidden;
+    transition: all 500ms;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -ms-transition: all 500ms;
+}
+
+.failed-payment-group:before {
+    position: absolute;
+    content: '';
+    background: url(https://previews.123rf.com/images/kbibibii/kbibibii1607/kbibibii160700281/60077849-geometric-simple-black-and-white-minimalistic-pattern-triangles-or-stained-glass-window-can-be-used-.jpg) no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -ms-transition: all 500ms;
+}
+.failed-payment-group:hover:before {
+    opacity: .1;
+}
+
+.failed-payment-group:before {
+    position: absolute;
+    content: '';
+    background: url('img-section3.jpg') no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -ms-transition: all 500ms;
+}
+.background-gradient-blue {
+    background-color: #002A91;
+    background-image: linear-gradient(to bottom right, #00a3f0, #002A91);
+}
+
+.parallax {
+  background-image: url('img-parallax.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+blockquote {
+	background-color: #ffd22d;
+	color: #000;
+	border: none;
+	border-left: 5px solid #002A91;
+	padding: 30px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/********** multistep form css *************/
+#heading {
+    text-transform: uppercase;
+    color: #002A91;
+    font-weight: normal
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input,
+#msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: none;
+    border-bottom: 2px solid blue;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    /*background-color: #ECEFF1;*/
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 400ms;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: 0 10px 10px #52a0e5;
+    -webkit-box-shadow: 0 10px 10px #52a0e5;
+    box-shadow: 0 10px 10px #52a0e5;
+    outline-width: 0;
+}
+
+#msform .action-button {
+    width: 100px;
+    background: #002A91;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: #311B92
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #000000
+}
+
+.signupcard {
+    z-index: 0;
+    border: none;
+    position: relative;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0 0 15px #333;
+    border-radius: 15px;
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #002A91;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #002A91;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #002A91
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f13e"
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f030"
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #002A91
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #002A91
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
